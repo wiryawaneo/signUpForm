@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Sign Up</title>
   </head>
@@ -10,33 +11,37 @@
     <container>
       <section id="imageSection"></section>
       <section id="formSection">
-        <div>
+        <div id="formHeader">
           <p>This is not real online service, or a real online sign up page.</p>
-          <p>Is this a real p tag? Idk</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque consectetur nec ex at cursus. Sed at ante rutrum,
+            tincidunt dui sed, iaculis magna. Ut tristique mollis est, a laoreet
+            diam vulputate sed.
+          </p>
         </div>
         <form>
-          <div>
-            <p>Let's do this!</p>
+          <div id="formContent">
+            <div>
+              <p>Let's do this!</p>
+            </div>
+            <div>
+              <label>First Name</label>
+              <input />
+            </div>
+            <div><label>Last Name</label> <input /></div>
+            <div>
+              <label>Email</label>
+              <input type="email" />
+            </div>
+            <div><label>Phone Number</label> <input type="number" /></div>
+            <div>
+              <label>Password</label>
+              <input />
+            </div>
+            <div><label>Confirm Password</label> <input /></div>
           </div>
-          <fieldset>
-            <label>First Name</label>
-            <input />
-            <label>Last Name</label>
-            <input />
-          </fieldset>
-          <fieldset>
-            <label>Email</label>
-            <input type="email" />
-            <label>Phone Number</label>
-            <input type="number" />
-          </fieldset>
-          <fieldset>
-            <label>Password</label>
-            <input />
-            <label>Confirm Password</label>
-            <input />
-          </fieldset>
-          <button>Create Account</button>
+          <button id="create">Create Account</button>
         </form>
       </section>
     </container>
