@@ -116,6 +116,11 @@ form > #formContent {
   border: 2px solid rgb(253, 135, 234);
 }
 
+/* .inputContainer > input:invalid {
+  outline: none;
+  border: 2px solid red;
+} */
+
 #formSection > div {
   margin-left: 5%;
 }
@@ -156,3 +161,5 @@ form > #formContent > * {
   cursor: pointer;
   color: rgb(253, 149, 164);
 }
+
+/* left to do - error input and password verification (use js) */
