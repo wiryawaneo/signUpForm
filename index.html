@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Sign Up</title>
   </head>
   <body>
     <container>
-      <section id="imageSection"></section>
+      <section id="imageSection">
+        <div class="image-sidebar">
+          Test
+        </div>
+      </section>
       <section id="formSection">
         <div id="formHeader">
           <p>This is not real online service, or a real online sign up page.</p>
@@ -22,24 +32,32 @@
         </div>
         <form>
           <div id="formContent">
-            <div>
-              <p>Let's do this!</p>
+            <div class="textContainer">
+              <p class="formText">Let's do this!</p>
             </div>
-            <div>
+            <div class="inputContainer">
               <label>First Name</label>
-              <input />
+              <input type="text" placeholder="First Name" required />
             </div>
-            <div><label>Last Name</label> <input /></div>
-            <div>
+            <div class="inputContainer">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last Name" required />
+            </div>
+            <div class="inputContainer">
               <label>Email</label>
-              <input type="email" />
+              <input type="email" placeholder="Email@email.com" required />
             </div>
-            <div><label>Phone Number</label> <input type="number" /></div>
-            <div>
+            <div class="inputContainer">
+              <label>Phone Number</label>
+              <input type="number" placeholder="0467 123 456" required />
+            </div>
+            <div class="inputContainer">
               <label>Password</label>
-              <input />
+              <input type="password" required />
             </div>
-            <div><label>Confirm Password</label> <input /></div>
+            <div class="inputContainer">
+              <label>Confirm Password</label> <input type="password" required />
+            </div>
           </div>
           <button id="create">Create Account</button>
         </form>

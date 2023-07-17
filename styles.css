@@ -1,5 +1,9 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
 p {
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 label,
@@ -24,8 +28,19 @@ container {
   background-position: center center;
 }
 
+.image-sidebar {
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 30%;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
 #formSection {
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(252, 243, 250);
   flex: 2 0 0;
   height: auto;
   display: flex;
@@ -34,15 +49,53 @@ container {
 }
 
 #formHeader {
-  font-size: 2rem;
+  font-size: 1.4rem;
   max-width: 70%;
+  margin-bottom: 3%;
+}
+
+#formHeader > p {
+  font-weight: 100;
 }
 
 form > #formContent {
-  background-color: white;
+  background-color: rgb(252, 234, 249);
   padding: 50px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.textContainer {
+  flex-basis: 100%;
+}
+
+.formText {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.inputContainer {
+  margin-bottom: 2%;
+  flex-basis: 40%;
+}
+
+.inputContainer > label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1%;
+}
+
+.inputContainer > input {
+  width: 60%;
+  padding: 8px 12px;
+  border: 2px solid rgb(206, 206, 206);
+  border-radius: 4px;
+}
+
+.inputContainer > input:focus {
+  outline: none;
+  border: 2px solid rgb(253, 135, 234);
 }
 
 #formSection > div {
@@ -66,4 +119,6 @@ form > #formContent > * {
   border-radius: 12px;
   box-shadow: 1;
   color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 800;
 }
